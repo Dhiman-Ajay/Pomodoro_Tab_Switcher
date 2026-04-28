@@ -1,29 +1,65 @@
-# Looped Pomodoro Tab Switcher
+## Short Description
 
-A Manifest V3 browser extension for Chrome or Edge that rotates through a user-selected list of already-open tabs on a custom timer.
+🧠 Turn chaotic tab switching into structured focus sessions.
+A Pomodoro-powered tab manager with custom focus tab lists, timed task rotation, break reminders, and a GitHub-style productivity heatmap.
 
-## How to load it
+## Full Description
 
-1. Open `chrome://extensions` or `edge://extensions`.
-2. Enable developer mode.
-3. Click **Load unpacked**.
-4. Select this folder:
-   `C:\Users\OMNIARCH\Documents\Codex\2026-04-28\build-an-extension-which-is-pomodoro`
+🚫 Too many tabs.
+🚫 Constant switching.
+🚫 Endless “just one quick check.”
 
-## How to use it
+Most productivity extensions try to block distractions.
+This one restructures how you work inside the browser.
 
-1. Open the extension popup.
-2. Add tabs from **Open Tabs** into **Selected Loop**.
-3. Set the minute value beside each selected tab.
-4. Drag selected tabs to choose the loop order.
-5. Click **Start**.
+This extension combines ⏳ Pomodoro focus cycles with 🎯 intentional tab management to help you stay focused while handling multiple tasks, subjects, or workflows.
 
-The popup shows the active tab, remaining countdown, completed tabs in the current loop, and progress bar while the loop is running. The selected tab rows also fill as the active tab's timer advances.
+Instead of randomly jumping between tabs, you create structured focus sessions using custom tab lists and timed work intervals.
 
-Use **Pause** to preserve the remaining time, **Resume** to continue, **Next** to switch immediately, and **Stop** to reset the loop. The notification toggle controls desktop notifications when the extension switches tabs.
+## Perfect for:
+📚 Studying
+💻 Coding
+📝 Writing
+🔬 Research
+🎨 Creative work
+📈 Deep work sessions
 
-Breaks are optional. Enable the default break timer to add a break between tabs, or set a custom break beside any selected tab. A custom break of `0` means the tab uses the enabled default break.
+## ✨ Features
 
-The **Focus Dashboard** stores local usage stats by day. It shows today's total, the last 7 days, session count, a GitHub-style 35-day heatmap, and the top tabs for whichever day you click. Smaller entries are grouped into **Other**, and **Clear list** removes tab listings for the selected day while keeping the heatmap total.
+✅ Pomodoro-based focus sessions
+✅ Custom focus tab groups
+✅ Configurable work & break timers
+✅ GitHub-style productivity heatmap
+✅ Structured tab switching
+✅ Lightweight and distraction-free
+✅ Designed for multitaskers who still want focus
 
-The extension only switches between existing tabs. It does not create new tabs, and it prevents duplicate tab entries in the loop. If a selected tab is closed, it is automatically removed from the saved loop.
+## 🧩 How It Works
+
+1️⃣ Create a custom focus tab list
+2️⃣ Start a timed focus session
+3️⃣ Work only within your selected tabs
+4️⃣ Take scheduled breaks
+5️⃣ Build consistency through visual progress tracking
+
+## 🧠 Why It’s Different
+
+Most tab managers organize tabs.
+Most Pomodoro apps only track time.
+
+This extension does both — while helping reduce impulsive tab wandering and mental context loss.
+
+It turns your browser into a structured workspace instead of a distraction machine.
+
+## 🔥 Built For People Who
+Open 30+ tabs and lose track constantly
+Study multiple subjects at once
+Switch between coding, docs, videos, and notes
+Want deep focus without heavy website blockers
+Prefer workflow structure over brute-force restriction
+
+## 📊 Stay Consistent
+
+Track your daily focus activity with a GitHub-style heatmap and build sustainable work habits over time.
+
+### Small focused sessions compound.

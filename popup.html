@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pomodoro Tab Switcher</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <h1>Pomodoro Tabs</h1>
+          <p id="statusText">Paused</p>
+        </div>
+        <div class="header-actions">
+          <button id="themeToggle" class="icon-button" type="button" title="Toggle dark mode" aria-label="Toggle dark mode">D</button>
+          <button id="refreshTabs" class="icon-button" type="button" title="Refresh tabs" aria-label="Refresh tabs">R</button>
+        </div>
+      </header>
+
+      <section class="countdown-card" aria-label="Current countdown">
+        <div>
+          <span class="countdown-label">Current tab</span>
+          <strong id="activeTabTitle">Nothing running</strong>
+        </div>
+        <time id="countdownTime" datetime="PT0S">--:--</time>
+        <span id="cycleText" class="cycle-text">0 / 0 completed</span>
+        <div class="progress-track" aria-hidden="true">
+          <span id="countdownProgress"></span>
+        </div>
+      </section>
+
+      <section class="actions" aria-label="Switcher controls">
+        <button id="startButton" class="primary" type="button">Start</button>
+        <button id="pauseButton" type="button">Pause</button>
+        <button id="switchNowButton" type="button">Next</button>
+        <button id="stopButton" type="button">Stop</button>
+      </section>
+
+      <label class="option-row">
+        <input id="notifyOnSwitch" type="checkbox" checked>
+        <span>Notify when switching tabs</span>
+      </label>
+
+      <section class="break-row" aria-label="Default break controls">
+        <label>
+          <input id="breakEnabled" type="checkbox">
+          <span>Enable default break</span>
+        </label>
+        <input id="defaultBreakMinutes" type="number" min="0.5" step="0.5" value="5" title="Default break minutes">
+        <span>min</span>
+      </section>
+
+      <section class="panel">
+        <div class="section-title">
+          <h2>Selected Loop</h2>
+          <span id="selectedCount">0</span>
+        </div>
+        <div id="selectedTabs" class="tab-list empty">No tabs added yet.</div>
+      </section>
+
+      <section class="panel">
+        <div class="section-title">
+          <h2>Open Tabs</h2>
+          <span id="openCount">0</span>
+        </div>
+        <div id="openTabs" class="tab-list empty">Loading tabs...</div>
+      </section>
+
+      <section class="panel analytics-panel">
+        <div class="section-title">
+          <h2>Focus Dashboard</h2>
+          <div class="dashboard-actions">
+            <span id="todayTotal">0m</span>
+            <button id="clearStatsButton" type="button">Clear list</button>
+          </div>
+        </div>
+        <div class="metric-grid">
+          <div>
+            <span>Today</span>
+            <strong id="todayMetric">0m</strong>
+          </div>
+          <div>
+            <span>7 days</span>
+            <strong id="weekMetric">0m</strong>
+          </div>
+          <div>
+            <span>Sessions</span>
+            <strong id="sessionMetric">0</strong>
+          </div>
+        </div>
+        <div id="heatmap" class="heatmap" aria-label="Daily focus heatmap"></div>
+        <div class="breakdown-head">
+          <strong id="breakdownDate">Today</strong>
+          <span id="breakdownTotal">0m total</span>
+        </div>
+        <div id="tabBreakdown" class="breakdown-list empty">No focus time recorded yet.</div>
+      </section>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
